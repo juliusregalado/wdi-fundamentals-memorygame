@@ -57,6 +57,10 @@ img {
 	margin: 40px 8px;
 }
 
+button {
+	width: 100%;
+}
+
 footer {
 	color: #ffffff;
 	font-size: 14px;
