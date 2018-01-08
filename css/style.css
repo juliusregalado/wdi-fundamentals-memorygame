@@ -57,8 +57,9 @@ img {
 	margin: 40px 8px;
 }
 
-button {
-	width: ;
+.btn-primary {
+	background-color: #00a6b3;
+	border-color: #f15b31;
 }
 
 footer {

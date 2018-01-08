@@ -58,10 +58,21 @@ var createBoard = function () {
 createBoard();
 
 //Create a working reset button that resets the cards without generating new ones.
-/*
-var startButton = document.getElementById("reset-button");
-for (var i = 0; i < cards.length; i++) {
+
+
+var button = document.getElementById("reset");
+var gameBoard = document.getElementById("game-board");
+	
+button.addEventListener("click", function() {
+	while (gameBoard.firstChild) {
+		gameBoard.removeChild(gameBoard.firstChild);
+	}
+	createBoard();
+});
+
+
+/*for (var i = 0; i < cards.length; i++) {
 	document.getElementById("game-board").removeChild;
-	startButton.addEventListener("click", createBoard);
-		
-*/
+	button.addEventListener("click", createBoard);
+*/	
+
